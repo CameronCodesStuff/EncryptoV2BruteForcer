@@ -11,21 +11,8 @@ This project is intended for educational and security research purposes only. Un
 - Supports dictionary and brute-force attacks
 - Lightweight and easy to use
 
-## Installation
-Ensure you have Python installed, then clone the repository:
-
-```sh
-git clone https://github.com/yourusername/EncryptoV2-BruteForcer.git
-cd EncryptoV2-BruteForcer
-pip install -r requirements.txt
-```
-
 ## Usage
 Run the brute-forcer with the required parameters:
-
-```sh
-python brute_forcer.py --ciphertext "YOUR_CIPHERTEXT" --mode brute --charset abc123 --max-length 6
-```
 
 ### Options:
 - `--ciphertext` : The encrypted text to brute force
