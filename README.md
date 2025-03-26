@@ -11,3 +11,4 @@ This project is intended for educational and security research purposes only. Un
 - Supports dictionary and brute-force attacks
 - Lightweight and easy to use
 
+Here is the live link [EncryptoV2BruteForcer](https://cameroncodesstuff.github.io/EncryptoV2BruteForcer/). 
