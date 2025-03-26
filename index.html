@@ -115,17 +115,16 @@
         let attempts = 0;
         let running = false;
         let startTime;
-        let speedFactor = 1;  // Default speed is Medium
+        let speedFactor = 1;  
         
-        // Character sets for each option
+     
         const lowercase = "abcdefghijklmnopqrstuvwxyz";
         const uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         const numbers = "0123456789";
         const specialChars = "!@#$%^&*()-_=+[{]}\\|;:'\",<.>/?";
         
-        // Function to generate the next letter sequence considering the selected options
         function generateCharacterSet() {
-            let set = lowercase; // Default to lowercase
+            let set = lowercase;  
             if (document.getElementById("uppercase").checked) set += uppercase;
             if (document.getElementById("numbers").checked) set += numbers;
             if (document.getElementById("specialChars").checked) set += specialChars;
@@ -163,13 +162,13 @@
         
         function setSpeed(speed) {
             if (speed === 'slow') {
-                speedFactor = 1000;  // Slow speed
+                speedFactor = 1000;  
             } else if (speed === 'medium') {
-                speedFactor = 200;  // Default speed (Medium)
+                speedFactor = 200;  
             } else if (speed === 'fast') {
-                speedFactor = 50;   // Fast speed
+                speedFactor = 50;   
             } else if (speed === 'superfast') {
-                speedFactor = 1;    // Super Fast speed (1ms delay)
+                speedFactor = 1;    
             }
         }
         
@@ -184,7 +183,6 @@
                 return;
             }
 
-            // Get the character set based on selected options
             const charset = generateCharacterSet();
             
             while (running) {
@@ -199,7 +197,7 @@
                     return;
                 }
                 currentSequence = nextLetterSequence(currentSequence, charset);
-                await new Promise(r => setTimeout(r, speedFactor));  // Delay based on speed factor
+                await new Promise(r => setTimeout(r, speedFactor));  
             }
         }
     </script>
